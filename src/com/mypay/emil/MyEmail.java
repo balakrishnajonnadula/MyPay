@@ -21,7 +21,7 @@ public class MyEmail {
 	public static void main(String fileName, String toEmail, String subject) {
 //		System.out.println("prepare");
 		String to = toEmail;
-		String from = "jbkismyname@gmail.com";
+		String from = "YOUR_EMAIL";
 		Properties properties = System.getProperties();
 		properties.put("mail.smtp.host", "smtp.gmail.com");
 		properties.put("mail.smtp.auth", "true");
@@ -32,7 +32,7 @@ public class MyEmail {
 
 			@Override
 			protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-				return new javax.mail.PasswordAuthentication("jbkismyname@gmail.com", "wagtsnkuvuvixykq");
+				return new javax.mail.PasswordAuthentication("YOUR_EMAIL", "YOUR_APP_PASSWORD");
 			}
 		});
 
